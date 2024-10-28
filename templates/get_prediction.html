@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h2>House Price Prediction Form</h2>
+    <form action="{{ url_for('post_prediction') }}" method="POST">
+        <label for="SqFt">Square Feet:</label>
+        <input type="number" id="SqFt" name="SqFt" required><br>
+
+        <label for="Bedrooms">Bedrooms:</label>
+        <input type="number" id="Bedrooms" name="Bedrooms" required><br>
+
+        <label for="Bathrooms">Bathrooms:</label>
+        <input type="number" id="Bathrooms" name="Bathrooms" required><br>
+
+        <label for="Offers">Offers:</label>
+        <input type="number" id="Offers" name="Offers" required><br>
+
+        <label for="Brick">Brick (Yes/No):</label>
+        <input type="text" id="Brick" name="Brick" required><br>
+
+        <label for="Neighborhood">Neighborhood:</label>
+        <input type="text" id="Neighborhood" name="Neighborhood" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
